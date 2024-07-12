@@ -20,7 +20,7 @@ Promise.allSettled([promise1, promise2, promise3, promise4]).then((values) => {
   console.log(values);
 });
 
-//return the promises which is faster to resolve and rejects remaining
+//return the promises which is faster to resolve or reject 
 Promise.race([promise1,promise2,promise3,promise4]).then((values) =>
   console.log(values)
 );
